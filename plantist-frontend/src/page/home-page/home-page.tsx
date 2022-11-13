@@ -3,7 +3,7 @@ import './home-page.css'
 import photo from './photo-1.png';
 import photo2 from './photo-2.png';
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
     return (
