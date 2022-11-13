@@ -3,6 +3,7 @@ import './home-page.css'
 import photo from './photo-1.png';
 import photo2 from './photo-2.png';
 import React from "react";
+import { Link, Outlet } from "react-router-dom";
 
 const HomePage = () => {
     return (
@@ -26,7 +27,9 @@ const HomePage = () => {
                         <img src={photo2} alt="photo2" width={400} height={300}/>
                     </div>
                     <div className="text-center flex-grow-1">
-                        <button type="button" className="btn btn-recognize">Recognize my plants!</button>
+                        <Link to="/search">
+                            <button type="button" className="btn btn-recognize">Recognize my plants!</button>
+                        </Link>
                     </div>
                 </div>
             </div>
