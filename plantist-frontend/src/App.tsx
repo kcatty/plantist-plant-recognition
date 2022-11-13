@@ -5,7 +5,6 @@ import SearchPage from "./page/search-page/search-page";
 import ContactPage from "./page/contact-page/contact-page";
 import PlantsPage from "./page/plants-page/plants-page";
 import Navbar from "./shared/navbar/navbar";
-import Footer from "./shared/footer/footer";
 import "./App.css"
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
                         </Route>
                     </Routes>
                 </BrowserRouter>
-                <Footer/>
             </div>
         </>
     );

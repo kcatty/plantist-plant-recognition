@@ -6,7 +6,7 @@ import logo from './plantist.png';
 const Navbar = () => {
     return (
         <>
-            <div className="d-flex flex-row p-2 border-success border-2 border-bottom border-opacity-25">
+            <div className="d-flex flex-row p-2 border-success border-2 border-bottom border-opacity-25 background-color">
                 <div className="d-flex flex-grow-1  justify-content-center align-items-center">
                     <Link to="/">
                         <img src={logo} alt="logo" width="200" height="100"/>
