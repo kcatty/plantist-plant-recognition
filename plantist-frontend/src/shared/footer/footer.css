@@ -1,0 +1,16 @@
+.footer-text {
+    font-size: 28px;
+    font-family: Roboto, serif;
+    color: #205A33;
+}
+
+.background-color {
+    background-color: white;
+}
+
+.footer {
+    position: fixed;
+    left:0;
+    bottom:0;
+    right:0;
+}

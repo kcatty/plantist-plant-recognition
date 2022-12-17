@@ -1,0 +1,16 @@
+.button {
+    font-size: 28px;
+    font-family: Roboto, serif;
+    color: #205A33;
+}
+
+.button-contact {
+    font-size: 28px;
+    font-family: Roboto, serif;
+    background-color: #7FD895;
+    color: white;
+}
+
+.background-color {
+    background-color: white;
+}
