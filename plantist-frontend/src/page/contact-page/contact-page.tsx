@@ -3,12 +3,13 @@ import Footer from "../../shared/footer/footer";
 import React from "react";
 import "./contact-page.css";
 import { Github, Linkedin } from "react-bootstrap-icons";
+import environment from '../../environment/environment.json'
 
 const ContactPage = () => {
     const white = '#FFFFFF';
     return (
         <>
-            <div className="d-flex flex-column p-3">
+            <div className="d-flex flex-column align-items-center p-3">
                 <div className="d-flex justify-content-center contact-title">Contact</div>
                 <div className="d-flex justify-content-center">
                     <div className="d-flex flex-column contact-background rounded contact-text text-center p-4">
@@ -30,10 +31,10 @@ const ContactPage = () => {
                             Recognition.
                             <br/>
                         </div>
-                        <a href="https://github.com/kcatty" target="_blank" rel="noopener noreferrer" className="pt-2">
+                        <a href={environment.githubLink} target="_blank" rel="noopener noreferrer" className="pt-2">
                             <Github size={64} color={white}/>
                         </a>
-                        <a href="https://www.linkedin.com/in/katarzyna-bielicka-608261201/" target="_blank"
+                        <a href={environment.linkedinLink} target="_blank"
                            rel="noopener noreferrer" className="pt-2">
                             <Linkedin size={64} color={white}/>
                         </a>
