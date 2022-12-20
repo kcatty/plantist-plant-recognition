@@ -2,6 +2,7 @@ import './plants-page.css'
 import React, { useState } from "react";
 import { plantInformation } from "./plants-information";
 import { Button, Modal } from "react-bootstrap";
+import Footer from "../../shared/footer/footer";
 
 const PlantsPage = () => {
     const [show, setShow] = useState(false);
@@ -31,6 +32,7 @@ const PlantsPage = () => {
                     </div>
                 ))}
             </div>
+            <Footer/>
             <Modal
                 show={show}
                 onHide={handleClose}
