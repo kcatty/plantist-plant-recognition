@@ -40,9 +40,9 @@ const ContactPage = () => {
                         </a>
                         <span className="pt-4">Technologies used:</span>
                         <div className="d-flex flex-row justify-content-center pt-4 pb-4">
-                            <img src='/react-icon.png' alt="image" width="150"/>
-                            <img src='/flask-icon.png' alt="image" width="350"/>
-                            <img src='/python.png' alt="image" width="150"/>
+                            <img src="/react-icon.png" alt="" width="150"/>
+                            <img src="/flask-icon.png" alt="" width="350"/>
+                            <img src="/python.png" alt="" width="150"/>
                         </div>
                     </div>
                 </div>
