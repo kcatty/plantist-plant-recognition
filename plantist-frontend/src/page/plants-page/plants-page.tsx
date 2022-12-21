@@ -1,6 +1,6 @@
 import './plants-page.css'
 import React, { useState } from "react";
-import { plantInformation } from "./plants-information";
+import { plantInformation } from "../../environment/plants-information";
 import { Button, Modal } from "react-bootstrap";
 import Footer from "../../shared/footer/footer";
 

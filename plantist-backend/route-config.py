@@ -9,7 +9,7 @@ from flask_cors import cross_origin
 from dataset_info import class_names
 
 app = Flask(__name__)
-model = torch.load('C:/Users/bieli_pc4qr7s/Documents/Code Parada.js/plantist/plantist/plantist-backend/model.pth')
+model = torch.load('C:/Users/bielickak/Documents/repka/priv/inz/plantist-plant-recognition/plantist-backend/model.pth')
 model.eval()
 
 
