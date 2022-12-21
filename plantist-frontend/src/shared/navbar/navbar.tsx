@@ -1,7 +1,6 @@
 import React from 'react';
 import { Outlet, Link } from "react-router-dom";
 import './navbar.css'
-import logo from './plantist.png';
 
 const Navbar = () => {
     return (
@@ -9,7 +8,7 @@ const Navbar = () => {
             <div className="d-flex flex-row p-2 border-success border-2 border-bottom border-opacity-25 background-color">
                 <div className="d-flex flex-grow-1  justify-content-center align-items-center">
                     <Link to="/">
-                        <img src={logo} alt="logo" width="200" height="100"/>
+                        <img src="/plantist.png" alt="logo" width="200" height="100"/>
                     </Link>
                 </div>
                 <div className="d-flex flex-grow-1 justify-content-between align-items-center">
