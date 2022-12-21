@@ -8,7 +8,7 @@ export const plantInformation = [
     {
         imgUrl: '/AlnusIncana.jpg',
         imgTreeUrl: '/AlnusIncanaTree.jpg',
-        name: 'Alnus Insana',
+        name: 'Alnus Incana',
         description: 'Alnus incana, the grey alder or speckled alder, is a species of multi-stemmed, shrubby tree in the birch family, with a wide range across the cooler parts of the Northern Hemisphere. Tolerant of wetter soils, they can be a common sight in swamps and wetlands. It is easily distinguished by its small cones, speckled bark and broad leaves.',
     },
     {
