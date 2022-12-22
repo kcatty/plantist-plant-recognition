@@ -17,7 +17,7 @@ const PlantsPage = () => {
     return (
         <>
             <div className="d-flex justify-content-center">
-                <span className="text-css pt-2 pb-2 text-center">List of Plants that are recognizable.</span>
+                <span className="text-css pt-2 pb-2 text-center">List of Plants that are recognizable:</span>
             </div>
             <div className="d-flex flex-column justify-content-center">
                 {plantInformation.map((plantInformation, index) => (
