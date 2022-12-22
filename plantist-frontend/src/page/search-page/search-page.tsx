@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import './search-page.css'
-import Footer from "../../shared/footer/footer";
 import {Button, Form, Modal} from "react-bootstrap";
 import {plantInformation} from "../../environment/plants-information";
+import {Link} from "react-router-dom";
 
 interface Picture {
     picturePreview: string,
@@ -59,12 +59,19 @@ const SearchPage = () => {
                     <Form.Group className="m-3" onChange={uploadPicture}>
                         <Form.Control type="file"/>
                     </Form.Group>
-                    <div className="d-flex justify-content-center p-2">
-                        <label>Image Preview</label>
-                    </div>
-                    <div className="d-flex justify-content-center p-2">
-                        <img className="rounded" src={picture.picturePreview} alt=""/>
-                    </div>
+                    {picture.picturePreview
+                        ? (
+                            <>
+                                <div className="d-flex justify-content-center p-2">
+                                    <label>Image Preview</label>
+                                </div>
+                                <div className="d-flex justify-content-center p-2">
+                                    <img className="rounded" src={picture.picturePreview} alt=""/>
+                                </div>
+                            </>
+                        )
+                        : <></>
+                    }
                     <div className="p-2 d-flex justify-content-end">
                         <button className="btn button-recognize" type="submit" disabled={isDisabled}>
                             Submit
@@ -75,7 +82,13 @@ const SearchPage = () => {
                     {error}
                 </div>
             </div>
-            <Footer/>
+            <div className="d-flex p-2 border-success border-2 border-top border-opacity-25 background-color footer">
+           <span className="footer-text">
+              Plantist
+              <br/>
+              made by Katarzyna Bielicka
+           </span>
+            </div>
 
             <Modal
                 show={showError}
@@ -117,11 +130,13 @@ const SearchPage = () => {
                 <Modal.Header closeButton>
                     <Modal.Title>
                         Your Result: {name}
+                        <Link to="/plants">
+                            click for more information
+                        </Link>
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <img src={plantInformation.find(plant => plant.name === name)?.imgTreeUrl} alt="" width="25"/>
-                    <img src={plantInformation.find(plant => plant.name === name)?.imgUrl} alt="" width="25"/>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="primary" onClick={handleCloseResultModal}>

@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b1b5815-e4dc-4a2c-a1cf-cad456a80b7b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/plantist-backend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route-config.py" beforeDir="false" afterPath="$PROJECT_DIR$/route-config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plantist-frontend/src/page/plants-page/plants-information.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../plantist-frontend/src/environment/plants-information.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../plantist-frontend/src/page/plants-page/plants-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../plantist-frontend/src/page/plants-page/plants-page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../plantist-frontend/src/page/search-page/search-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/../plantist-frontend/src/page/search-page/search-page.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../plantist-frontend/src/page/search-page/search-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../plantist-frontend/src/page/search-page/search-page.tsx" afterDir="false" />
     </list>
@@ -27,17 +20,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Flask server.Flask (route-config.py)">
     <configuration name="plantist-backend" type="PythonConfigurationType" factoryName="Python">
       <module name="plantist-backend" />
@@ -90,7 +83,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671657713652</updated>
-      <workItem from="1671657714971" duration="2646000" />
+      <workItem from="1671657714971" duration="3044000" />
+      <workItem from="1671696617014" duration="844000" />
     </task>
     <servers />
   </component>
@@ -109,6 +103,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/plantist_backend$Flask__route_config_py_.coverage" NAME="Flask (route-config.py) Coverage Results" MODIFIED="1671664260675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/plantist_backend$Flask__route_config_py_.coverage" NAME="Flask (route-config.py) Coverage Results" MODIFIED="1671696863021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
