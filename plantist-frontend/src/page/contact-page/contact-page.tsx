@@ -2,7 +2,7 @@ import "./contact-page.css"
 import Footer from "../../shared/footer/footer";
 import React from "react";
 import "./contact-page.css";
-import { Github, Linkedin } from "react-bootstrap-icons";
+import {Github, Linkedin} from "react-bootstrap-icons";
 import environment from '../../environment/environment.json'
 
 const ContactPage = () => {
@@ -40,9 +40,9 @@ const ContactPage = () => {
                         </a>
                         <span className="pt-4">Technologies used:</span>
                         <div className="d-flex flex-row justify-content-center pt-4 pb-4">
-                            <img src="/react-icon.png" alt="" width="150"/>
-                            <img src="/flask-icon.png" alt="" width="350"/>
-                            <img src="/python.png" alt="" width="150"/>
+                            <img className="img-size pl-2" src="/react-icon.png" alt=""/>
+                            <img className="img-size pl-2" src="/flask-icon.png" alt=""/>
+                            <img className="img-size pl-2" src="/python.png" alt=""/>
                         </div>
                     </div>
                 </div>

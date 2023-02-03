@@ -1,6 +1,5 @@
 .contact-title {
     font-size: 36px;
-    font-family: Roboto, serif;
     color: #216B39;
 }
 .contact-background {
@@ -9,6 +8,10 @@
 
 .contact-text {
     font-size: 28px;
-    font-family: Roboto, serif;
     color: white;
+}
+
+.img-size {
+    height: auto;
+    max-width: 200px
 }

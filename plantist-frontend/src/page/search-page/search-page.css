@@ -1,25 +1,21 @@
 .text-css {
     font-size: 24px;
-    font-family: Roboto, serif;
     color: #205A33;
 }
 
 .button-recognize {
     font-size: 28px;
-    font-family: Roboto, serif;
     background-color: #205A33;
     color: white;
 }
 
 .error-message-title {
     font-size: 28px;
-    font-family: Roboto, serif;
     color: #e20000;
 }
 
 .error-message-description {
     font-size: 24px;
-    font-family: Roboto, serif;
     color: #e20000;
 }
 

@@ -22,7 +22,7 @@ const PlantsPage = () => {
             <div className="d-flex flex-column justify-content-center">
                 {plantInformation.map((plantInformation, index) => (
                     <div className="d-flex flex-row justify-content-center align-items-center border-top border-bottom p-4">
-                        <img src={plantInformation.imgUrl} alt="" width="200" className="rounded"/>
+                        <img src={plantInformation.imgUrl} alt="" className="rounded img-size"/>
                         <div className="p-4">
                             <span className="text-css text-center">{plantInformation.name}</span>
                             <br/>
@@ -46,7 +46,7 @@ const PlantsPage = () => {
                 </Modal.Header>
                 <Modal.Body>
                     <div className="d-flex flex-row">
-                        <img src={plantInformation[treeNumber].imgTreeUrl} alt="" width="200"/>
+                        <img className="img-size" src={plantInformation[treeNumber].imgTreeUrl} alt=""/>
                         <span className="description-text p-2">
                         {plantInformation[treeNumber].description}
                     </span>

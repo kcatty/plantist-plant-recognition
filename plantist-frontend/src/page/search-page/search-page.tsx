@@ -3,6 +3,7 @@ import './search-page.css'
 import {Button, Form, Modal} from "react-bootstrap";
 import {plantInformation} from "../../environment/plants-information";
 import {Link} from "react-router-dom";
+import Footer from "../../shared/footer/footer";
 
 interface Picture {
     picturePreview: string,
@@ -38,7 +39,7 @@ const SearchPage = () => {
         var formdata = new FormData();
         formdata.append("filename", picture.pictureAsFile, picture.picturePreview);
 
-        await fetch("http://127.0.0.1:5000/predict", {
+        await fetch("http://127.0.0.1:8080/predict", {
             method: 'POST',
             headers: {'Access-Control-Allow-Origin': '*'},
             body: formdata,
@@ -82,13 +83,7 @@ const SearchPage = () => {
                     {error}
                 </div>
             </div>
-            <div className="d-flex p-2 border-success border-2 border-top border-opacity-25 background-color footer">
-           <span className="footer-text">
-              Plantist
-              <br/>
-              made by Katarzyna Bielicka
-           </span>
-            </div>
+            <Footer/>
 
             <Modal
                 show={showError}
@@ -129,9 +124,9 @@ const SearchPage = () => {
             >
                 <Modal.Header closeButton>
                     <Modal.Title>
-                        Your Result: {name}
+                        Your Result: {name} -
                         <Link to="/plants">
-                            click for more information
+                             click for more information
                         </Link>
                     </Modal.Title>
                 </Modal.Header>
