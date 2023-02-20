@@ -18,7 +18,7 @@ data_transforms = {
     ]),
 }
 
-data_dir = 'C:/Users/bielickak/Documents/repka/priv/inz/data/'
+data_dir = 'C:/Users/bieli_pc4qr7s/Documents/Code Parada.js/plantist/data/'
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                                           data_transforms[x])
                   for x in ['train', 'val']}

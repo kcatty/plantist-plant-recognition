@@ -1,46 +1,36 @@
-import io
-
-import torch
-import torchvision.transforms as transforms
 from PIL import Image
 from flask import Flask, jsonify, request
 from flask_cors import cross_origin
-
+from tensorflow import keras
 from dataset_info import class_names
 
 app = Flask(__name__)
-model = torch.load('C:/Users/bielickak/Documents/repka/priv/inz/plantist-plant-recognition/plantist-backend/model.pth')
-model.eval()
+model = keras.models.load_model("model.h5")
 
 
-def transform_image(image_bytes):
-    my_transforms = transforms.Compose([transforms.Resize(255),
-                                        transforms.CenterCrop(224),
-                                        transforms.ToTensor(),
-                                        transforms.Normalize(
-                                            [0.485, 0.456, 0.406],
-                                            [0.229, 0.224, 0.225])])
-    image = Image.open(io.BytesIO(image_bytes))
-    return my_transforms(image).unsqueeze(0)
+def preprocess_image(image, target_size):
+    image = image.resize(target_size)
+    return image
 
 
-def get_prediction(image_bytes):
-    tensor = transform_image(image_bytes=image_bytes)
-    outputs = model(tensor)
-    _, pred = torch.max(outputs, 1)
-    predicted_idx = str(class_names[pred])
-    print(predicted_idx)
-    return predicted_idx
+def get_prediction(image):
+    processed_image = preprocess_image(image, target_size=(224, 224))
+    predicted_idx = model.predict(processed_image)
+    return str(class_names[int(predicted_idx[0][0])])
 
 
 @app.route('/predict', methods=['POST'])
 @cross_origin()
 def predict():
+    data = {"success": False}
     if request.method == 'POST':
         file = request.files['filename']
-        img_bytes = file.read()
-        class_name = get_prediction(image_bytes=img_bytes)
-        return jsonify({'className': class_name})
+        if file is None:
+            return jsonify(data)
+        image = Image.open(file)
+        data["class_name"] = get_prediction(image=image)
+        data["success"] = True
+    return jsonify(data)
 
 
 if __name__ == '__main__':
